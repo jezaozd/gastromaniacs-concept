@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#a61e45">
+  <meta name="description" content="Гастрономические игры, ужины и события в Москве. Неофициальный дизайн-концепт Гастроманьяков.">
+  <title>Гастроманьяки — еда вступает в игру</title>
+  <link rel="preload" href="fonts/unbounded-600.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/founders.jpg" as="image">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#formats">К форматам событий</a>
+<header class="masthead">
+  <a class="brand" href="#top" aria-label="Гастроманьяки — начало"><img src="assets/wordmark.png" width="1467" height="203" alt="Гастроманьяки"></a>
+  <nav aria-label="Основная навигация"><a href="#formats">Форматы</a><a href="#hosts">Даша и Алина</a></nav>
+  <a class="header-cta" href="#occasion">Ваше событие <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</header>
+<main>
+  <section class="journey" id="top" aria-label="Ужин в трёх действиях">
+    <span class="scene-stop" id="intrigue" aria-hidden="true"></span><span class="scene-stop" id="aftertaste" aria-hidden="true"></span>
+    <div class="stage">
+      <div class="scenes">
+        <article class="scene appetite" aria-labelledby="hero-title">
+          <h1 id="hero-title"><span>Еда</span><span>вступает</span><span>в игру.</span></h1>
+          <figure class="hero-photo"><img src="assets/founders.jpg" width="1680" height="1200" alt="Даша и Алина за праздничным столом на фоне красного занавеса" fetchpriority="high"><figcaption>Даша и Алина. Ваша история начинается за столом.</figcaption></figure>
+          <div class="hero-deck"><p>Гастрономические игры, ужины<br>и события для ваших людей. Москва.</p><a class="text-link" href="#formats">Выбрать свой сценарий <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+          <span class="act" aria-hidden="true">Аппетит</span>
+        </article>
+        <article class="scene intrigue" aria-labelledby="intrigue-title">
+          <h2 id="intrigue-title">Попробуйте<br><span>угадать.</span></h2>
+          <figure><img src="assets/blind-tasting.jpg" width="700" height="500" alt="Гости пробуют блюда с завязанными глазами"><figcaption>Гастромафия. Вкус становится уликой.</figcaption></figure>
+          <div class="scene-copy"><p>Глаза закрыты. Три ингредиента в каждом блюде. Четыре раунда, чтобы договориться — или запутать всех за столом.</p><a class="text-link" href="#formats" data-pick="mafia">Хочу сыграть <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+          <span class="act" aria-hidden="true">Интрига</span>
+        </article>
+        <article class="scene aftertaste" aria-labelledby="aftertaste-title">
+          <h2 id="aftertaste-title">Общее<br><span>послевкусие.</span></h2>
+          <figure><img src="assets/quiz.jpg" width="700" height="500" alt="Участники гастрономического события вместе собирают большой кроссворд"><figcaption>Когда каждый становится частью истории.</figcaption></figure>
+          <div class="scene-copy"><p>День рождения, встреча команды или вечер с друзьями. Придумаем, что будет объединять вас за столом.</p><a class="text-link" href="#occasion">Придумать наш вечер <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+          <span class="act" aria-hidden="true">Послевкусие</span>
+        </article>
+      </div>
+      <nav class="act-rail" aria-label="Три действия ужина"><a href="#top">Аппетит</a><a href="#intrigue">Интрига</a><a href="#aftertaste">Послевкусие</a><span>Листайте — история продолжается <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6"/></svg></span></nav>
+    </div>
+  </section>
+
+  <section class="formats section" id="formats" aria-labelledby="formats-title">
+    <div class="section-intro"><h2 id="formats-title">Что подаём<br>на этот вечер?</h2><p>Выберите настроение.<br>Сценарий соберём под ваш повод.</p></div>
+    <div class="programme">
+      <div class="format-list" role="tablist" aria-label="Сценарии события" aria-orientation="vertical">
+        <button type="button" id="tab-mafia" role="tab" aria-selected="true" aria-controls="format-panel" data-format="mafia">Гастромафия<span>Игра со вкусом</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+        <button type="button" id="tab-physics" role="tab" aria-selected="false" aria-controls="format-panel" data-format="physics" tabindex="-1">Гастрофизика<span>Ужин-эксперимент</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+        <button type="button" id="tab-quiz" role="tab" aria-selected="false" aria-controls="format-panel" data-format="quiz" tabindex="-1">Гастроквиз<span>Вкусная командная игра</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+        <button type="button" id="tab-custom" role="tab" aria-selected="false" aria-controls="format-panel" data-format="custom" tabindex="-1">Ваша история<span>Особенный повод</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+      </div>
+      <div id="format-panel" class="format-panel" role="tabpanel" aria-labelledby="tab-mafia" tabindex="0">
+        <div class="format-image"><img id="format-photo" src="assets/blind-tasting.jpg" width="700" height="500" alt="Гости дегустируют блюда с закрытыми глазами" loading="lazy"></div>
+        <div class="format-detail"><p id="format-description">Угадываем ингредиенты с закрытыми глазами. Обсуждаем версии, ищем сообщников и доверяем вкусовой интуиции.</p><div class="format-actions"><a class="text-link" id="format-choose" href="#occasion">Обсудить Гастромафию <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a id="format-source" class="source-link" href="https://gastromaniacs.ru/mafia" target="_blank" rel="noopener">Подробности на сайте команды</a></div></div>
+      </div>
+    </div>
+    <p class="format-footnote">Ещё в меню: выездные ужины, фудквесты, мастер-классы и тематические вечеринки. <a href="https://gastromaniacs.ru/" target="_blank" rel="noopener">Все форматы команды</a></p>
+  </section>
+
+  <section class="hosts" id="hosts" aria-labelledby="hosts-title">
+    <figure><img src="assets/founders.jpg" width="1680" height="1200" loading="lazy" alt="Основательницы Гастроманьяков Даша и Алина"></figure>
+    <div class="hosts-copy"><h2 id="hosts-title">У вашего вечера<br>есть авторы.</h2><p class="founder-names">Дарья Маслова<br>Алина Постаногова</p><p>Мы придумали «Гастроманьяков», чтобы собирать людей вокруг новых впечатлений. Через вкус, игру и любопытство.</p><p>Начинаем с разговора о вашем поводе. Затем соединяем идею, блюда и взаимодействие гостей в один сценарий.</p><a class="text-link" href="https://t.me/gastro_maniacs_info" target="_blank" rel="noopener">Познакомиться в Telegram <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <section class="occasion section" id="occasion" aria-labelledby="occasion-title">
+    <div class="section-intro"><h2 id="occasion-title">У вас повод.<br>У нас — аппетит<br>к идеям.</h2><p>Расскажите, кого собираете.<br>Дату, площадку и стоимость<br>обсудим с вами лично.</p></div>
+    <form id="event-brief">
+      <div class="form-fields"><label>Для кого<select id="purpose" name="purpose"><option>Для друзей и близких</option><option>Для команды</option><option>Для клиентов и партнёров</option></select></label><label>Сценарий<select id="selected-format" name="format"><option value="mafia">Гастромафия</option><option value="physics">Гастрофизика</option><option value="quiz">Гастроквиз</option><option value="custom">Ваша история</option><option value="unsure">Хочу совет команды</option></select></label><label>Сколько вас<input id="guests" name="guests" type="number" min="1" step="1" inputmode="numeric" placeholder="Пока не знаю"></label><label>Когда планируете<input id="event-date" name="date" type="text" maxlength="80" placeholder="Дата или месяц"></label></div>
+      <div class="brief-action"><button class="solid-button" type="submit">Подготовить письмо <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p>Соберём черновик здесь.<br>Вы проверите текст и отправите его из своей почты.</p><p id="brief-status" role="status"></p></div>
+      <div class="draft-preview" id="draft-preview" hidden><label for="draft-text">Ваш черновик — текст можно изменить</label><textarea id="draft-text" rows="12"></textarea><a id="draft-link" class="text-link" href="mailto:gastromaniacs@yandex.ru">Открыть в почте <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    </form>
+    <div class="contact-line"><a href="https://t.me/gastro_maniacs_info" target="_blank" rel="noopener">Написать в Telegram</a><a href="tel:+79153001644">+7 915 300-16-44</a><a href="mailto:gastromaniacs@yandex.ru">gastromaniacs@yandex.ru</a></div>
+  </section>
+</main>
+<footer><a href="#top" aria-label="Гастроманьяки — наверх"><img src="assets/wordmark.png" width="1467" height="203" alt="Гастроманьяки"></a><div><span>Москва · гастрономические события</span><a href="https://gastromaniacs.ru/" target="_blank" rel="noopener">Официальный сайт команды</a><span>Неофициальный дизайн-концепт · 2026</span></div></footer>
+</body></html>
